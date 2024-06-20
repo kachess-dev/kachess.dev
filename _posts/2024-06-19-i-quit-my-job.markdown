@@ -21,4 +21,4 @@ What's next? Realistically, I'm in limbo until my father's passing. I cannot sta
 
 Coincidentally, my best man was laid off on the same day I resigned. After work on Friday, we will head up to Lake Kachess, a place we've been visiting for 35 years, to relax, float, and ponder life. And so begins another chapter.
 
-![FAST scale](/images/fast-scale.png)
+![FAST scale](/images/fast-scale.webp)
