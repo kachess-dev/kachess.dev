@@ -1,0 +1,13 @@
+---
+baseurl: ""
+description: This is my place where I post my thoughts to share with others.
+email: chris@crickertech.com
+exclude:
+  - script/
+github_username:  calef
+plugins:
+  - jekyll-feed
+title: Kachess
+twitter_username: chrisalef
+url: "https://kachess.dev"
+theme: minima

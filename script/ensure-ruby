@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+set -e # exit if any command fails
+
+if [ ! -f ".ruby-version" ]; then
+  echo "Error: .ruby-version file does not exist." >&2
+  exit 1
+fi
+if [ ! -f ".ruby-gemset" ]; then
+  echo "Error: .ruby-gemset file does not exist." >&2
+  exit 1
+fi
+
+DESIRED_RUBY_VERSION="$(cat .ruby-version)"
+
+if command -v ruby >/dev/null; then
+  installed_ruby_version=$(ruby -v | awk '{print $2}')
+  if [ "$installed_ruby_version" == "$DESIRED_RUBY_VERSION" ]; then
+    exit 0
+  fi
+fi
+./script/ensure-cmake
+./script/ensure-curl
+./script/ensure-rbenv
+./script/ensure-libffi
+./script/ensure-libyaml
+rbenv install -s "$DESIRED_RUBY_VERSION"

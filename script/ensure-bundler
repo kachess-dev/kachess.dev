@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e # exit if any command fails
+
+if [ ! -f ".bundler-version" ]; then
+  echo "Error: .bundler-version file does not exist." >&2
+  exit 1
+fi
+
+./script/ensure-ruby
+# shellcheck disable=SC1090
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+gem install bundler -v "$(cat .bundler-version)"
