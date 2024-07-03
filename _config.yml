@@ -4,6 +4,9 @@ description: This is my place where I post my thoughts to share with others.
 email: chris@crickertech.com
 exclude:
   - script/
+  - Vagrantfile
+  - README.md
+  - LICENSE
 github_username:  calef
 plugins:
   - jekyll-feed
