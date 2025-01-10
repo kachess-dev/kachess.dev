@@ -12,5 +12,4 @@ plugins:
   - jekyll-feed
 theme: minima
 title: Kachess
-twitter_username: chrisalef
 url: "https://kachess.dev"
