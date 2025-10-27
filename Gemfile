@@ -9,7 +9,6 @@ gem "icalendar"
 gem "jekyll"
 group :jekyll_plugins do
   gem "jekyll-feed"
-  gem "jekyll-sitemap"
 end
 gem "minima"
 gem "nokogiri"
