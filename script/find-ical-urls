@@ -1,0 +1,50 @@
+#!/usr/bin/env ruby
+require 'open-uri'
+require 'nokogiri'
+require 'uri'
+
+if ARGV.empty?
+  warn "Usage: find-ical-urls <url>"
+  exit 1
+end
+
+url = ARGV[0]
+
+begin
+  html = URI.open(url).read
+rescue OpenURI::HTTPError => e
+  warn "Failed to fetch URL: #{e.message}"
+  exit 1
+rescue SocketError, URI::InvalidURIError => e
+  warn "Invalid or unreachable URL: #{e.message}"
+  exit 1
+end
+
+doc = Nokogiri::HTML(html)
+
+# Find links that point to .ics files or advertise iCalendar feeds
+ical_links = []
+
+# 1️⃣ Look for <link> tags with calendar types
+doc.css('link[type="text/calendar"], link[type="application/ics"], link[type="application/x-ical"]').each do |link|
+  href = link['href']
+  ical_links << URI.join(url, href).to_s if href
+end
+
+# 2️⃣ Look for <a> tags that link to .ics files
+doc.css('a[href]').each do |a|
+  href = a['href']
+  if href =~ /\.ics(\?.*)?$/i
+    ical_links << URI.join(url, href).to_s
+  end
+end
+
+# Remove duplicates
+ical_links.uniq!
+
+if ical_links.empty?
+  warn "No iCalendar (.ics) feeds found on this page."
+  exit 1
+else
+  ical_links.each { |link| puts link }
+end
