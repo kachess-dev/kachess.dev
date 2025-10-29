@@ -6,7 +6,7 @@ source_url: https://www.aljazeera.com/news/2025/10/27/lithuania-to-shoot-down-sm
 original_content: Lithuania says balloons disrupting air traffic are sent by smugglers
   transporting contraband cigarettes into the EU.
 content_checksum: b95ff5e090e86737b4fe0077a6646c6740f5b9f2d8256213996ee7a13c1e0b14
+summarized: true
 ---
 
-Lithuania says balloons disrupting air traffic are sent by smugglers transporting contraband cigarettes into the EU.
-
+Lithuania has declared that balloons disrupting air traffic are being sent by smugglers to transport contraband cigarettes into the EU. In response, the country is set to shut down Belarus border crossings and shoot down the smuggler balloons.

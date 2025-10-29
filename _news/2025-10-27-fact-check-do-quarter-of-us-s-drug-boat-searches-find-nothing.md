@@ -6,7 +6,7 @@ source_url: https://www.aljazeera.com/news/2025/10/27/fact-check-do-quarter-of-u
 original_content: A 2024 Coast Guard report found 27 percent of drug boat searches
   came back empty-handed.
 content_checksum: 9be7afccdd5fe57410a690fb4c9f361a0348c8c2d567cda51b19be18576ea5e9
+summarized: true
 ---
 
-A 2024 Coast Guard report found 27 percent of drug boat searches came back empty-handed.
-
+A 2024 report by the US Coast Guard reveals that 27% of drug boat searches yielded no results. Despite rigorous efforts to control drug trafficking, a significant portion of these operations do not find any illicit substances.
