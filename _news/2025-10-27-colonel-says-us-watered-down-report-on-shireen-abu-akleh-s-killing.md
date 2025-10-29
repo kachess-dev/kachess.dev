@@ -6,7 +6,7 @@ source_url: https://www.aljazeera.com/news/2025/10/27/colonel-says-us-watered-do
 original_content: Former Colonel Steve Gabavics says evidence Israeli soldier intentionally
   shot journalist shrugged off by US government.
 content_checksum: 62adbb2ec324394c7c998b449c1e62334f8b11ea21bddddb812248faec9299e3
+summarized: true
 ---
 
-Former Colonel Steve Gabavics says evidence Israeli soldier intentionally shot journalist shrugged off by US government.
-
+Former Colonel Steve Gabavics claims that the US government has downplayed evidence suggesting an Israeli soldier intentionally shot journalist Shireen Abu Akleh. Gabavics has accused the US of "watering down" a report on the incident, arguing that the evidence was shrugged off rather than thoroughly investigated.

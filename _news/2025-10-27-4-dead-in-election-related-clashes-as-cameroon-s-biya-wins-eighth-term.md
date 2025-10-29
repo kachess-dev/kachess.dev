@@ -6,7 +6,7 @@ source_url: https://www.aljazeera.com/video/newsfeed/2025/10/27/4-dead-in-electi
 original_content: Cameroon’s 92-year-old President Paul Biya has won a record eighth
   term with 53.66% of the vote.
 content_checksum: 94429f52cd0701e802bd653dfa596d832432185dd1f8432bc236e047273272c1
+summarized: true
 ---
 
-Cameroon’s 92-year-old President Paul Biya has won a record eighth term with 53.66% of the vote.
-
+Cameroon's President Paul Biya, aged 92, has won an unprecedented eighth term in office, securing 53.66% of the vote. This victory comes amidst election-related clashes that have resulted in four fatalities.
