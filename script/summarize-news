@@ -28,11 +28,13 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
 
     # Build a single prompt to handle URL + fallback to original content
     prompt = <<~PROMPT
-      Summarize this article in 100 words or less in Markdown format from the URL: #{source_url}.
-      If you cannot summarize the URL or fetch its content, summarize the article from this text instead:
+      Summarize this article in 100 words or less in Markdown format. In the summary:
+        1. Do not provide a link back to the source URL in the summary because the link will be provided in addition to the summary.
+        2. Do provide an image if one is provided.
+        3. Do not provide any other message or explanation about the processing of the summary. If there is a problem, simply return an empty summary.
+      First try to summarize from the URL: #{source_url}.
+      If you cannot summarize from the URL or fetch its content, summarize the article from this text instead:
       #{body}
-      Do not provide any other message or explanation.
-      Do not provide a link back to the source URL in the summary because the link will be provided in addition to the summary.
     PROMPT
 
     begin
