@@ -26,12 +26,13 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
       next
     end
 
-    # Prompt instructs model to return [CANNOT_SUMMARIZE] on failure
+    # Build a single prompt to handle URL + fallback to original content
     prompt = <<~PROMPT
-      Summarize this article in 100 words or less in Markdown format.
-      If you cannot summarize the URL or fetch its content, respond exactly with [CANNOT_SUMMARIZE].
+      Summarize this article in 100 words or less in Markdown format from the URL: #{source_url}.
+      If you cannot summarize the URL or fetch its content, summarize the article from this text instead:
+      #{body}
       Do not provide any other message or explanation.
-      URL: #{source_url}
+      Do not provide a link back to the source URL in the summary because the link will be provided in addition to the summary.
     PROMPT
 
     begin
@@ -59,7 +60,7 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
       end
 
       # If a valid summary is returned, store it and mark file as summarized
-      if summary && summary != "[CANNOT_SUMMARIZE]"
+      if summary && !summary.empty?
         front_matter['original_content'] = body.strip
         front_matter['summarized'] = true
 
@@ -68,7 +69,6 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
         File.write(file_path, updated_content)
         puts "Updated #{file_path}"
       else
-        # Skip the file without marking it as summarized
         puts "Skipped #{file_path}: could not summarize"
       end
 
