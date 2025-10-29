@@ -18,7 +18,7 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
     front_matter = YAML.safe_load(front_matter_raw) || {}
 
     # Skip if already summarized
-    next if front_matter['ai_summarized'] == true
+    next if front_matter['summarized'] == true
 
     source_url = front_matter['source_url']
     unless source_url
@@ -61,9 +61,10 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
       # If a valid summary is returned, store it and mark file as summarized
       if summary && summary != "[CANNOT_SUMMARIZE]"
         front_matter['original_content'] = body.strip
-        front_matter['ai_summarized'] = true
+        front_matter['summarized'] = true
 
-        updated_content = ["---", front_matter.to_yaml.strip, "---", summary].join("\n\n")
+        yaml_front_matter = YAML.dump(front_matter).sub(/\A---\s*\n/, '').strip
+        updated_content = ["---", yaml_front_matter, "---", "", summary].join("\n")
         File.write(file_path, updated_content)
         puts "Updated #{file_path}"
       else
