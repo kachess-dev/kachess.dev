@@ -2,11 +2,27 @@
 require 'yaml'
 require 'fileutils'
 require 'ruby/openai'
+require 'open-uri'
+require 'nokogiri'
 
 # Configure Ruby-OpenAI client
 client = OpenAI::Client.new(access_token: ENV.fetch("OPENAI_API_KEY"))
 
 NEWS_DIR = "_news"
+
+def fetch_article_text(url)
+  begin
+    html = URI.open(url, open_timeout: 10, read_timeout: 15).read
+    doc = Nokogiri::HTML(html)
+    # Remove scripts, styles, and navigation cruft
+    doc.search('script, style, nav, header, footer, noscript, iframe').remove
+    text = doc.css('article, main, body').text
+    text.strip.gsub(/\s+/, ' ')
+  rescue => e
+    warn "Error fetching #{url}: #{e.class} - #{e.message}"
+    nil
+  end
+end
 
 Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
   content = File.read(file_path)
@@ -26,15 +42,22 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
       next
     end
 
-    # Build a single prompt to handle URL + fallback to original content
+    # Try to fetch and extract content from the webpage
+    article_text = fetch_article_text(source_url)
+    article_text ||= body # fallback to the original content if fetch failed
+
     prompt = <<~PROMPT
-      Summarize this article in 100 words or less in Markdown format. In the summary:
-        1. Do not provide a link back to the source URL in the summary because the link will be provided in addition to the summary.
-        2. Do provide an image if one is provided.
-        3. Do not provide any other message or explanation about the processing of the summary. If there is a problem, simply return an empty summary.
-      First try to summarize from the URL: #{source_url}.
-      If you cannot summarize from the URL or fetch its content, summarize the article from this text instead:
-      #{body}
+      Summarize the following article in 100 words or less in Markdown format.
+
+      Article URL: #{source_url}
+
+      In the summary:
+        1. Do not include a link back to the source URL.
+        2. Include an image if one is referenced in the text.
+        3. Do not include any commentary or explanation about this process.
+
+      ARTICLE CONTENT:
+      #{article_text}
     PROMPT
 
     begin
@@ -56,29 +79,29 @@ Dir.glob("#{NEWS_DIR}/*.md").each do |file_path|
           )
           summary = response.dig("choices", 0, "message", "content")&.strip
         rescue Faraday::TooManyRequestsError
-          puts "Rate limited, waiting 5 seconds before retry (attempt #{attempts})"
+          warn "Rate limited, waiting 5 seconds before retry (attempt #{attempts})"
           sleep 5
         end
       end
 
-      # If a valid summary is returned, store it and mark file as summarized
       if summary && !summary.empty?
+        # ✅ Store the original Markdown body (not the extracted HTML)
         front_matter['original_content'] = body.strip
         front_matter['summarized'] = true
 
         yaml_front_matter = YAML.dump(front_matter).sub(/\A---\s*\n/, '').strip
         updated_content = ["---", yaml_front_matter, "---", "", summary].join("\n")
         File.write(file_path, updated_content)
-        puts "Updated #{file_path}"
+        puts "✅ Updated #{file_path}"
       else
-        puts "Skipped #{file_path}: could not summarize"
+        puts "⚠️  Skipped #{file_path}: could not summarize"
       end
 
     rescue => e
-      puts "Error processing #{file_path}: #{e.class} - #{e.message}"
+      warn "Error processing #{file_path}: #{e.class} - #{e.message}"
     end
 
   else
-    puts "Skipping #{file_path}: no front matter"
+    warn "Skipping #{file_path}: no front matter"
   end
 end
