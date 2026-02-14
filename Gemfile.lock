@@ -35,7 +35,7 @@ GEM
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
-    fileutils (1.7.3)
+    fileutils (1.8.0)
     forwardable-extended (2.6.0)
     front_matter_parser (1.0.1)
     google-protobuf (4.33.0)
