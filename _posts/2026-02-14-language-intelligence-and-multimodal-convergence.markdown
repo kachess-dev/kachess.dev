@@ -1,7 +1,7 @@
 ---
 title: "Language, Intelligence, and the Multimodal Convergence"
 description: "From dolphins to deep learning, language appears to be a uniquely powerful substrate for developing general reasoning. But it reaches its full potential only when grounded in other forms of experience."
-date: 2025-02-14
+date: 2026-02-14
 tags:
   - artificial-intelligence
   - cognitive-science
