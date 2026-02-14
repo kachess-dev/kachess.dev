@@ -1,23 +1,5 @@
 ---
 baseurl: ""
-defaults:
-  - scope:
-      path: "_news"
-      type: "news"
-    values:
-      layout: "news_item"
-  - scope:
-        path: "_sources"
-        type: "sources"
-    values:
-      layout: "source"
-collections:
-  events:
-    output: true
-  news:
-    output: true
-  sources:
-    output: true
 description: This is my place where I post my thoughts to share with others.
 email: chris@crickertech.com
 exclude:
