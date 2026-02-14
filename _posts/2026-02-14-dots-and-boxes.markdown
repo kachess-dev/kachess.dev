@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Dots and Boxes"
 date:   2026-02-14 12:00:00 -0800
 ---

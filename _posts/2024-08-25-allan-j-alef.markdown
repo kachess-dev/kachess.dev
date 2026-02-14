@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Allan J Alef (June 17, 1950 - Aug 25, 2024)
 date:   2024-08-25 20:00:00 -0800
 ---
