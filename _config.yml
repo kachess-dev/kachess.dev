@@ -15,3 +15,9 @@ show_excerpts: true
 theme: minima
 title: Kachess
 url: "https://kachess.dev"
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

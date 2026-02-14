@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "I quit my job!"
 date:   2024-06-19 18:52:12 -0700
 ---

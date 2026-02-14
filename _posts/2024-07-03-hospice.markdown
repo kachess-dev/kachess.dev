@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Hospice
 date:   2024-07-03 15:23:00 -0800
 ---
