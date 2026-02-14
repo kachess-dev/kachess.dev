@@ -10,6 +10,8 @@ tags:
 draft: false
 ---
 
+![Chio the cat](/images/chio.jpg)
+
 Natural language understanding was long classified as "[AI-complete](https://en.wikipedia.org/wiki/AI-complete)" — as hard as general intelligence itself. The assumption was that you'd need to solve reasoning first, and language would follow. Instead, the field discovered that training on language prediction alone produced systems with broad reasoning, coding, math, and planning abilities. Language wasn't the destination. It was the vehicle.
 
 The biological evidence tells a similar story.
