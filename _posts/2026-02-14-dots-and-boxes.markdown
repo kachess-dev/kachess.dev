@@ -33,6 +33,9 @@ date:   2026-02-14 12:00:00 -0800
   .dab-active { text-decoration: underline; }
   #dab-board {
     cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    touch-action: manipulation;
   }
   #dab-reset {
     margin-top: 16px;
