@@ -3,12 +3,10 @@ title: "Breaking Up with TurboTax: How I Used Claude to File My Taxes for Free"
 date: 2026-02-27
 categories: [taxes, ai, personal-finance]
 tags: [claude, turbotax, intuit, irs, free-file, ai-assistant]
-description: "A journey from a decade of paid tax software to AI-assisted free filing using Claude and IRS Free File Fillable Forms."
+description: "A journey from paid tax software to AI-assisted free filing using Claude and IRS Free File Fillable Forms."
 ---
 
-*A journey from a decade of paid tax software to AI-assisted free filing*
-
----
+![Luna the dog](/images/7CC3F67C-4E75-4CEE-89CD-E6996AE2FA5C_1_105_c.jpeg)
 
 After more than a decade of TurboTax, I filed my 2025 federal return for free using Claude. My tax situation isn't simple: married filing jointly, two children, inherited IRA distributions across two brokerages, a Roth conversion, HSA contributions and distributions, capital loss carryforwards, foreign tax credits, and Section 199A REIT dividends. The completed return ran 42 pages—Form 1040 plus Schedules 1, 3, B, and D, plus Forms 8949, 8889, 8995, and 1116. Cost: $0.
 
@@ -116,4 +114,4 @@ My 2025 federal return filed successfully. Total cost: ~150,000 tokens.
 
 Time spent was comparable to past TurboTax years. The bottleneck wasn't Claude—it was FFFF. The audit iterations added time, but each one found real errors.
 
-I stopped funding a company that spends millions lobbying against free tax filing. I learned more about my own tax situation. AI-assisted preparation works for complex returns—42 pages, nine forms, multiple inherited IRAs, trust filings—without commercial software.
+I stopped funding a company that spends millions lobbying against free tax filing. I learned more about my own tax situation in one filing season than in a decade of clicking through TurboTax. AI-assisted preparation works for complex returns—42 pages, nine forms, multiple inherited IRAs, trust filings—without commercial software.
