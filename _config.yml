@@ -1,12 +1,14 @@
 ---
 baseurl: ""
 description: This is my place where I post my thoughts to share with others.
+author: Christopher Alef
 email: chris@crickertech.com
 exclude:
   - script/
   - Vagrantfile
   - README.md
   - LICENSE
+  - CLAUDE.md
 future: true
 github_username: calef
 plugins:
