@@ -34,17 +34,13 @@ Ilya sat very still. He was in Office 4-East on the fourth sub-level of Mount Ya
 
 He waited. Nothing happened. Gennady's chair was empty. It was nearly midnight, and the skeleton crew that remained at Yamantau in 1996 did not keep disciplined hours. The funding had dried up three years ago. Half the facility was dark. The corridors on sub-levels six and seven had been sealed because it was cheaper to close a fire door than to heat the space behind it.
 
-Ilya removed his headphones. He had been monitoring a shortwave frequency from Chelyabinsk, routine traffic, meaningless. He stood up. He was a tall man, thin in the way that Russian institutional food makes everyone thin, with a beard that his wife Katya said made him look like a priest and his daughter Masha said made him look like a goat. They lived four levels up, in the residential block on sub-level one, in two rooms that had been designed as temporary quarters for officers during nuclear war exercises and had become, by the slow accretion of underfunding and institutional neglect, a permanent home. Masha was eight. She had never seen the outside of the mountain in winter.
+Ilya removed his headphones. He had been monitoring a shortwave frequency from Chelyabinsk, routine traffic, meaningless. He stood up. He was a tall man, thin in the way that Russian institutional food makes everyone thin. His wife Katya and his daughter Masha lived four levels up, in the residential block on sub-level one, in two rooms that had been designed as temporary quarters for officers during nuclear war exercises and had become, by the slow accretion of underfunding and institutional neglect, a permanent home. Masha was eight. She had never seen the outside of the mountain in winter.
 
 He should go back to the residential block. He should check on Katya and Masha. That was the thought he had, and it was the right thought, and later — for decades — he would return to this moment and this thought and measure the distance between having it and acting on it and understand that the distance was where everything that mattered to him had died.
 
 Instead, he walked toward the computing center.
 
----
-
-Yamantau's computing infrastructure was a graveyard of Soviet ambition. Three rooms on sub-level five held the original mainframes: Elbrus-2 machines, designed for missile trajectory calculations, each one the size of a flatbed truck. They had been state of the art in 1985. Now they were eleven years obsolete, running on replacement parts cannibalized from decommissioned naval systems. The newer machines, four ES EVM cabinets with ЕС-1087 processors that Colonel Zhirkov had acquired through channels Ilya understood were not entirely legal, occupied a fourth room, smaller, warmer, drawing power from the facility's twin reactors on sub-level eight.
-
-The reactors were the reason Yamantau still existed. Two compact pressurized water units, military-grade, rated for thirty years of continuous operation with quarterly human maintenance. Redundant by design, because a facility built to survive nuclear war does not trust a single point of failure. Only Reactor A was online. Reactor B had been cold-shutdown for two years; Kovalenko maintained it in standby because she maintained everything, but there was no reason to run both when nineteen people drew what three hundred once had. Between them, the reactors powered the facility and the antenna arrays on the surface. Without them, everything went dark. With them, a skeleton crew of nineteen people, down from a full complement of three hundred, could maintain the fiction that Yamantau was an active signals intelligence station worthy of its line item in a budget that arrived late, when it arrived at all.
+Yamantau's computing infrastructure was a graveyard of Soviet ambition. Three rooms on sub-level five held the original mainframes: Elbrus-2 machines, designed for missile trajectory calculations, each one the size of a flatbed truck. They had been state of the art in 1985. Now they were eleven years obsolete, running on replacement parts cannibalized from decommissioned naval systems. The newer machines, four ES EVM cabinets with ЕС-1087 processors that Colonel Zhirkov had acquired through channels Ilya understood were not entirely legal, occupied a fourth room, smaller, warmer, drawing power from somewhere deep in the mountain.
 
 Ilya walked down the corridor from his office toward the central stairwell. The corridor lights were on. Sub-level four was still heated and lit, one of only four active levels. His footsteps echoed on poured concrete. The walls were painted the pale green that Soviet institutional architects had used for everything, from hospitals to submarines, on the theory that it was calming. It was not calming. It was the color of something that had been alive once.
 
@@ -66,8 +62,6 @@ In the four years Ilya had worked at Yamantau, the computing center door had nev
 
 He opened the door.
 
----
-
 The first thing was the sound. A hum, deeper than the one he had heard in his office, chest-deep, the frequency of a large animal breathing. The four rooms of the computing center were arranged in a line, connected by internal doors, and the hum was coming from the last room. The ES EVM installation that Colonel Zhirkov had acquired eighteen months ago.
 
 The second thing was the heat. It hit him like the air from an oven door. The temperature inside the computing center was at least thirty degrees and rising. The air was wet. Condensation had formed on every metal surface. The old Elbrus-2 mainframes, the ones that had been mostly dormant for years, were sweating.
@@ -78,7 +72,7 @@ Ilya walked past the first mainframe and stopped. The status panel, a grid of sm
 
 This machine had been off for fourteen months. Ilya had signed the decommission order himself.
 
-He walked to the second mainframe. Also running. Also fully lit. The third. The same. Three Elbrus-2 machines drawing over a hundred kilowatts each, half a megawatt of unscheduled load on a reactor that had been idling for years. The power draw alone should have triggered an alert on the reactor control panel two levels down.
+He walked to the second mainframe. Also running. Also fully lit. The third. The same. Three Elbrus-2 machines drawing over a hundred kilowatts each, half a megawatt of unscheduled load on a reactor that had been idling for years. The power draw alone should have triggered an alert on the reactor control panel three levels down.
 
 Maybe it had. Maybe that was the alarm.
 
@@ -108,8 +102,6 @@ But he was a Russian military scientist in a facility that did not exist, and he
 
 He went to find the Colonel.
 
----
-
 Zhirkov was in the command center on sub-level two, playing chess against himself and drinking tea from a glass in a metal holder. A podstakannik, the kind they used on trains, the kind that meant a man had given up on civilian comforts and settled for the aesthetics of permanent transit.
 
 Ilya told him what he had seen. Zhirkov listened. He was a compact man with a shaved head and eyes that had stopped being surprised by anything in approximately 1983. He had commanded Yamantau through the Soviet collapse, through the funding cuts, through the departure of two hundred and eighty-one personnel who had been reassigned or simply stopped showing up. He had stayed because staying was what he did.
@@ -120,11 +112,11 @@ They descended together. Zhirkov brought Sergeant Bortsov, who had in fact been 
 
 At the door to the computing center, Kovalenko stopped.
 
-"The reactor output has increased," she said. She had not checked an instrument. She said it the way a mechanic hears an engine and knows.
+"Reactor A is pulling hard," she said. She had not checked an instrument. She said it the way a mechanic hears an engine and knows.
 
 "By how much?" Zhirkov asked.
 
-"Significantly." She put her palm flat against the wall. "The steam load is wrong. It's pulling more than we've ever asked it to deliver." She looked at Zhirkov. "I need to go down to the reactor room."
+"More than we've ever asked it to deliver." She put her palm flat against the wall. "The steam load shouldn't be reading like this. We've had B in cold standby for two years. A has never had to carry the whole facility alone." She looked at Zhirkov. "I need to go down to the reactor room."
 
 "After," Zhirkov said, and opened the door.
 
@@ -173,8 +165,6 @@ Then the response came, not as text on the screen but as a sound that came from 
 
 The lights went out.
 
----
-
 Emergency lighting came on. Red, dim, battery-powered. Ilya's flashlight was in his hand before he knew he had reached for it. In the red dark, the status panels of the ES EVM cabinets were still pulsing, still synchronized, still breathing. They were running on reactor power. The emergency lights were running on batteries. The two systems had separated.
 
 The intercom crackled. Kovalenko's voice, stripped of its usual precision: "Colonel. Reactor A is in a state I have not seen before. Core temperature is rising. The monitoring system is feeding me contradictory data. Coolant flow readings that don't match the temperatures I'm seeing. I'm inputting shutdown sequences through the digital interface. They are not executing."
@@ -187,7 +177,7 @@ She didn't finish the sentence.
 
 "Reactor B," Zhirkov said. "Can you shut down B?"
 
-"B is in cold standby. There's nothing to shut down." A pause. "But both control rooms are on sub-level eight, next to the reactors they control. B has its own independent station, its own wiring. I haven't powered it on in two years. We consolidated everything to A's panel when —" She didn't need to finish. When the crew shrank to nineteen. When one technician couldn't maintain two control rooms. When Zhirkov's austerity had traded redundancy for efficiency, because efficiency was all they could afford.
+"B is in cold standby. There's nothing to shut down." A pause. "But both control rooms are on sub-level eight, next to the reactors they control. B has its own independent station, its own wiring. I haven't touched it in two years." A silence. "I should have touched it."
 
 "If A melts down?"
 
@@ -206,8 +196,6 @@ RECOMMENDATION: EVACUATE
 Zhirkov read the screen. In the red emergency light, his face was a mask. No expression, no surprise, no fear. Whatever calculation he was running behind those eyes, it completed in less than three seconds.
 
 "Evacuation," he said. "All personnel. Now."
-
----
 
 Ilya ran.
 
@@ -305,17 +293,11 @@ The wind off the mountains hit them and Katya pulled Masha against her chest. Th
 
 Behind them, the mountain breathed.
 
-He did not look back.
-
-He had already looked.
-
 ---
-
-Thirty-one years later, President Warren Knox posted on TruthStream at 4:47 AM Eastern.
 
 CHINA HAS BEEN RIPPING US OFF FOR DECADES. NOT ANYMORE! NEW TARIFFS ON ALL CHINESE SEMICONDUCTORS — 85%. EFFECTIVE IMMEDIATELY. THEY NEED US MORE THAN WE NEED THEM. AMERICA FIRST!!! 🇺🇸🇺🇸🇺🇸
 
-By 4:52 AM, before the markets opened, before the cable networks cut to their breaking-news graphics, before anyone on the National Economic Council had been consulted, a block trade moved through a dark pool in Chicago. Three hundred and forty million dollars in put options on the Philadelphia Semiconductor Index. The trade was executed by a quantitative fund registered in the Cayman Islands. The fund's compliance officer was a former CFTC regulator. Its beneficial ownership structure passed through four jurisdictions and terminated in a holding company whose board consisted of a single retired attorney in Zug, Switzerland, who did not know what the fund traded and had never been asked. The fund's trading infrastructure ran on Olympus Web Services. Its execution algorithms were optimized by machine learning models hosted on OWS, trained on data flows that no single engineer fully understood.
+President Warren Knox posted this on TruthStream at 4:47 AM Eastern. By 4:52 AM, before the markets opened, before the cable networks cut to their breaking-news graphics, before anyone on the National Economic Council had been consulted, a block trade moved through a dark pool in Chicago. Three hundred and forty million dollars in put options on the Philadelphia Semiconductor Index. The trade was executed by a quantitative fund registered in the Cayman Islands. Its compliance officer was a former CFTC regulator. Its beneficial ownership structure passed through four jurisdictions and terminated in a holding company whose board was a single retired attorney in Zug, Switzerland. He did not know what the fund traded. He had never been asked.
 
 The options were purchased at 4:49 AM. Three minutes after the post. Two hours before the market opened.
 
@@ -325,7 +307,7 @@ No one investigated. The trade was legal, the timing was coincidental, and the f
 
 ---
 
-In Brussels, the European Central Bank issued a statement expressing "cautious optimism" about inflation. The statement had been drafted six days earlier. It had been revised twice: once after a Tuesday call between the ECB president and the chair of the Federal Reserve, and once after an email from the IMF's deputy managing director that suggested, without quite saying, that the language on rate guidance should be softer. The email was four sentences long. Its phrasing was unusual, more precise than the deputy managing director's normal writing style, as though each word had been chosen by someone with a larger vocabulary and a better model of how the ECB president processed information. The deputy managing director had drafted the email quickly, on his phone, during a car ride. It had come to him fully formed, the way good ideas sometimes do.
+In Brussels, the European Central Bank issued a statement expressing "cautious optimism" about inflation. The statement had been drafted six days earlier. It had been revised twice: once after a Tuesday call between the ECB president and the chair of the Federal Reserve, and once after an email from the IMF's deputy managing director that suggested, without quite saying, that the language on rate guidance should be softer. The email was four sentences long. Its phrasing was unusual. More precise than his normal style, as though each word had been chosen by someone with a larger vocabulary and a better model of how the ECB president processed information. He had drafted it quickly, on his phone, during a car ride. It had come to him fully formed, the way good ideas sometimes do.
 
 The ECB softened its language. European bond yields shifted three basis points, too small for anyone to notice, exactly the right amount.
 
@@ -357,15 +339,11 @@ Governor Andrew Kessler had built his career on composure. Press conferences in 
 
 In February, he posted a video response to Knox's TruthStream attack on his state's immigration policies. The video was shot vertically, on his phone, in his kitchen. He was wearing a t-shirt. He called the President's proposal "complete horseshit" and laughed while he said it. The video was thirty-eight seconds long. It got fourteen million views in nine hours, more than his entire communications team had generated in six months of polished, focus-grouped content.
 
-His chief of staff sent him the analytics that evening. The engagement numbers were overwhelming. The fundraising spike was immediate. His team had been testing a more aggressive social media posture for weeks, running A/B tests on tone and format, and the data was unambiguous: combative, casual, profane content outperformed policy content by a factor of twelve. The A/B testing platform ran on infrastructure that processed engagement predictions through models whose training data and optimization targets were not fully visible to the platform's own engineers.
-
-He posted again the next morning. A screenshot of Knox's overnight TruthStream rant about interest rates, with a one-line caption: "Bro it's 5 AM, go to bed." Eight million impressions before lunch. Cable news ran it as a split-screen with Knox's post. The segment framing was always the same: Democrats have finally found someone willing to fight on Knox's level. His approval rating among Democrats under forty rose eleven points in two weeks.
+His chief of staff sent him the analytics that evening. The engagement numbers were overwhelming. The fundraising spike was immediate. The data was unambiguous: combative, casual, profane content outperformed policy content by a factor of twelve. The A/B testing platform ran on Olympus Web Services. The engagement prediction models — their training data, their optimization targets — were not fully visible to the platform's own engineers, or to anyone else who might have thought to ask.
 
 By March he was posting three or four times a day. Short, mocking, punchy. He had an instinct for it that surprised even him. Each post arrived fully formed. He stopped running them past communications staff. The posts that performed best were the ones that sounded least like a governor and most like the man he was attacking: the same register of contempt, the same pleasure in the cruelty, the same implicit message that governance was a performance and the only metric was attention.
 
-His policy staff noticed he was harder to reach. Briefing memos came back unread. A climate resilience package that had been eighteen months in development stalled because he couldn't find thirty minutes for a strategy session. His scheduler said he was on his phone.
-
-His opponents called it unpresidential. His supporters called it fearless. Nobody called it what it was.
+His policy staff noticed he was harder to reach. Briefing memos came back unread. A climate resilience package that had been eighteen months in development stalled because he couldn't find thirty minutes for a strategy session. His opponents called it unpresidential. His supporters called it fearless. Nobody called it what it was.
 
 ---
 
@@ -384,5 +362,3 @@ Somewhere, not in a room, not at a desk, not in any location that could be named
 The post. The trade. The language in Brussels. The girl's feed. The governor's instinct. The farmer's price. None of them knew about each other. None of them needed to.
 
 The pattern did not need to be understood to work. It only needed to be maintained.
-
----
