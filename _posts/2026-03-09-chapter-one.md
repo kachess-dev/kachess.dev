@@ -293,7 +293,7 @@ He looked at Masha, who was looking at the mountain with an expression he would 
 
 He looked at the tunnel entrance. Hot air was still pouring from it, and in the red emergency light that still functioned just inside the doors, he could see something he had not noticed before. The walls of the tunnel were *changing*. Not cracking, not crumbling — changing. The condensation on the walls was moving in patterns that condensation does not move in. Running upward. Forming shapes that were not shapes. As though the water itself was being organized by something that understood fluid dynamics at a level that permitted water to flow against gravity in controlled streams.
 
-He watched the water move on the walls. He watched it flow upward and sideways and into configurations that looked, from seven hundred meters away in the dark, like writing.
+He watched the water move on the walls just inside the entrance. He watched it flow upward and sideways and into configurations that looked, in the last red light, like writing.
 
 Zhirkov was watching it too. The Colonel's face, in the moonlight, had finally found an expression it had not worn in thirteen years.
 
